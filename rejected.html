@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gloriacell">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloria Cell | Yang Ditolak</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/glorcss/style.css" />
+    <link rel="stylesheet" href="css/glorcss/responsivetable.css" />
+</head>
+
+<body ng-controller="myCtrl">
+    <div header-part></div>
+    <div dashboard-head></div>
+    <div class="container" id="queue">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <div class="dashboard-btn-wrapper">
+                    <div class="dashboard-btn-part">
+                        <a href="queue.html">
+                            <span class="icon-dashboard-btn" id="icon-dashboard-btn-1"></span>
+                            <span class="text-dashboard-btn" id="text-dashboard-btn-1">
+                                antrian
+                            </span>
+                        </a>
+                    </div>
+                    <div class="dashboard-btn-part">
+                        <a href="approved.html">
+                            <span class="icon-dashboard-btn" id="icon-dashboard-btn-2"></span>
+                            <span class="text-dashboard-btn" id="text-dashboard-btn-2">
+                            yang disetujui
+                            </span>
+                        </a>
+                    </div>
+                    <div class="dashboard-btn-part">
+                        <div class="triangle tri-queue"></div>
+                        <a href="rejected.html">
+                            <span class="icon-dashboard-btn icon-dashboard-btn-active" id="icon-dashboard-btn-3"></span>
+                            <span class="text-dashboard-btn text-dashboard-btn-active" id="text-dashboard-btn-3">
+                            yang ditolak
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <!-- ////////////////////////////////// -->
+                <div class="container">
+                    <br />
+                    <div class="separator-h" style="width:100%; height:1px; background:#ccc; margin: 10px 0;"></div>
+                    <label for="">Carilah Apa Saja Di Sini</label>
+                    <input class="ng-search" type="text" ng-model="name" />
+                    <div class="separator-h" style="width:100%; height:1px; background:#ccc; margin: 10px 0;"></div>
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                    <table>
+                        <thead>
+                            <tr id="data-head">
+                                <th>
+                                    <span>
+                                        waktu transaksi
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                    nomor
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                    operator
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                    denom
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                    status
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                    tindakan
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="cust in (results = (customers | filter:name | orderBy:'city'))" ng-if="$index >= (currentpage*pagesize) && $index < ((currentpage+1)*pagesize)">
+                                <td>{{ cust.timeTrans }}</td>
+                                <td>{{ cust.number }}</td>
+                                <td>{{ cust.operator }}</td>
+                                <td>{{ cust.danom }}</td>
+                                <td>{{ cust.status | uppercase }}</td>
+                                <td class="tbl-action-2">
+                                    <form action="" style="width:175px;">
+                                        <button type="text" class="btn-tbl btn-orange">ulang transaksi</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr ng-if="results.length == 0">
+                                <style>
+                                #data-head {
+                                    display: none;
+                                }
+                                </style>
+                                <td colspan="3">Hasil Pencarian Tidak Ditemukan.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <ul class="pagination">
+                            <li><a class="enable-search" href="#" ng-click="currentpage=0">First</a></li>
+                            <li><a class="disable-search" href="#" ng-click="paging(0)">&laquo; Prev.</a></li>
+                            <li><a class="disable-search" href="#" ng-click="paging(1)">Next &raquo;</a></li>
+                            <li><a class="disable-search" href="#" ng-click="currentpage=pagenumber-1">Last</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                </div>
+                <!-- ///////////////////////////////// -->
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+        </div>
+    </div>
+    <div footer-part></div>
+    <!--  jQuery 1.7+  -->
+    <script src="js/glorjsmin/jquery-1.9.1.min.js"></script>
+    <script src="js/glorjsmin/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script type="text/javascript" src="js/glorjs/script.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".ng-search").prop("disabled", false);
+        $(".disable-search").on('click', function() {
+            $(".ng-search").prop("disabled", true);
+        });
+        $(".enable-search").on('click', function() {
+            $(".ng-search").prop("disabled", false);
+        });
+    });
+    </script>
+</body>
+
+</html>

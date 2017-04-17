@@ -1,0 +1,74 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        &times;
+    </button>
+    <h2 class="modal-title" id="myModalLabel">
+        Status Transaksi Anda
+    </h2>
+    <hr/>
+</div>
+<div class="modal-body">
+    <div class="container statusinmodal" id="confirmation">
+        <div class="row">
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>Untuk transaksi dengan rincian sebagai berikut:</p>
+                <table border="0" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">nomor</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_number">+62 85 648 984 911</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">operator</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_operator"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">denom</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_denom">50000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <hr/>
+                <div class="status-part">
+                    <span class="status-icon">
+                    </span>
+                    <span class="status-text">
+                        Berhasil
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+    </div>
+</div>
+<script>
+//ajax 2
+$(document).ready(function() {
+    $('#success_ajax').on('click', function(event) {
+        event.preventDefault();
+        if ($(this).attr('action') != '#') {
+            $("html, body").animate({
+                scrollTop: 200
+            }, "fast");
+            $('.modal-content').load($(this).attr('action'));
+        }
+    });
+});
+</script>

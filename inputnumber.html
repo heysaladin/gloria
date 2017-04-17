@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gloriacell">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloria Cell | Memasukkan Nomor</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/glorcss/style.css" />
+</head>
+
+<body>
+    <style>
+    .header {
+        height: 40px;
+    }
+    
+    #main-logo {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .footer hr,
+    .footer #slogan #slogan-text {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .container .back_block {
+        margin: -5px 0 0 -20px;
+        padding: 0 0 24px 0;
+    }
+    /*----------------------*/
+    
+    h2 {
+        padding: 0 0 10px 0;
+    }
+    
+    hr {
+        display: none;
+    }
+    </style>
+    <div header-part></div>
+    <div class="container" id="inputnumber">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>masukkan nomor anda</h2>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-3 col-sm-2 col-xs-0"></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <div class="ghost_area">
+                    <input type="text" name="input_number" id="input_num" class="big_input grey_area" />
+                    <div class="transp_area">
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-1">1</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-2">2</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-3">3</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-4">4</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-5">5</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-6">6</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-7">7</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-8">8</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-9">9</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn num_btn_blank" id=""></button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-0">0</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn num_btn_blank" id=""></button>
+                        </span>
+                    </div>
+                    <div class="btn_wrapper">
+                        <button id="btn_corr">koreksi</button>
+                        <form action="confirmation.html">
+                            <button id="btn_next">lanjut</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-2 col-xs-0"></div>
+        </div>
+        <div class="row back_block">
+            <div class="col-lg-4 col-md-3 col-sm-1 col-xs-0"></div>
+            <div class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
+                <a href="denom.html">
+                    <span class="arrow_back"></span>
+                    <h3 class="back_btn">Kembali</h3>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-1 col-xs-0"></div>
+        </div>
+    </div>
+    <div footer-part></div>
+    <!--  jQuery 1.7+  -->
+    <script src="js/glorjsmin/jquery-1.9.1.min.js"></script>
+    <script src="js/glorjsmin/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script type="text/javascript" src="js/glorjs/script.js"></script>
+    <script>
+    var textField = $('#input_num');
+    $('body').on('click', '#btn-1', function() {
+        textField.val(textField.val() + ' 1');
+    });
+    $('body').on('click', '#btn-2', function() {
+        textField.val(textField.val() + ' 2');
+    });
+    $('body').on('click', '#btn-3', function() {
+        textField.val(textField.val() + ' 3');
+    });
+    $('body').on('click', '#btn-4', function() {
+        textField.val(textField.val() + ' 4');
+    });
+    $('body').on('click', '#btn-5', function() {
+        textField.val(textField.val() + ' 5');
+    });
+    $('body').on('click', '#btn-6', function() {
+        textField.val(textField.val() + ' 6');
+    });
+    $('body').on('click', '#btn-7', function() {
+        textField.val(textField.val() + ' 7');
+    });
+    $('body').on('click', '#btn-8', function() {
+        textField.val(textField.val() + ' 8');
+    });
+    $('body').on('click', '#btn-9', function() {
+        textField.val(textField.val() + ' 9');
+    });
+    $('body').on('click', '#btn-0', function() {
+        textField.val(textField.val() + ' 0');
+    });
+    //---------------------
+    $('body').on('click', '#btn_corr', function() {
+        textField.val('');
+    });
+    </script>
+    <script>
+    var winW = 630,
+        winH = 460;
+    if (document.body && document.body.offsetWidth) {
+        winW = document.body.offsetWidth;
+        winH = document.body.offsetHeight;
+    }
+    if (document.compatMode == 'CSS1Compat' &&
+        document.documentElement &&
+        document.documentElement.offsetWidth) {
+        winW = document.documentElement.offsetWidth;
+        winH = document.documentElement.offsetHeight;
+    }
+    if (window.innerWidth && window.innerHeight) {
+        winW = window.innerWidth;
+        winH = window.innerHeight;
+    }
+    $(document).ready(function() {
+        if (screen.width <= 770) {
+            autoScrolling: false;
+            fitToSection: false;
+            console.log("ok");
+        }
+        $('.section').height(winH);
+    });
+    console.log("lebar " + winW);
+    console.log("tinggi " + winH);
+    if ((winW < 768) && (($('.container').height() + 50) < winH)) {
+        console.log($('.container').width() + " X " + $('.container').height() + ", special size");
+        var gap = winH - ($('.container').height() + 50);
+        console.log("gap " + gap);
+        $('.container').height(($('.container').height() + gap) - 10);
+    } else if (winW < 768) {
+        console.log($('.container').width() + ", small width");
+    } else if (winH < 400) {
+        console.log($('.container').height() + ", narrow");
+    } else if (($('.container').height() + 50) > winH) {
+        console.log($('.container').height() + ", long");
+    } else {
+        console.log($('.container').height() + ", save");
+        var gap = winH - ($('.container').height() + 50);
+        console.log("gap " + gap);
+        $('.container').height(($('.container').height() + gap) - 10);
+    }
+    </script>
+</body>
+
+</html>

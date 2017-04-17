@@ -1,0 +1,1465 @@
+.center {
+  text-align: center;
+}
+.bgpat {
+  background-image: url('../../images/bg_pat.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+}
+.logo {
+  background-image: url('../../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.separator_bg {
+  background-image: url('../../images/separator.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+}
+.pat {
+  background-image: url('../../images/pat.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+}
+.gloradius {
+  border-radius: 45%;
+}
+.mascot {
+  background-image: url('../../images/mascot.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+}
+.btn-true {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+}
+.btn-ghost {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #aaa;
+  border: solid 1px #aaa;
+}
+.ghost {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #666;
+  border: solid 1px #aaa;
+  font-size: 14px;
+  font-family: 'Museo300';
+  text-transform: none;
+}
+@font-face {
+  font-family: 'Museo300';
+  src: url("../../fonts/Museo300-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo500';
+  src: url("../../fonts/Museo500-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo700';
+  src: url("../../fonts/Museo700-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../../fonts/Pacifico.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StickyThings';
+  src: url("../../fonts/StickyThings.eot");
+  src: local("☺"), url("../fonts/StickyThings.woff") format("woff"), url("../fonts/StickyThings.ttf") format("truetype"), url("../fonts/StickyThings.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-100';
+  src: url("../../fonts/MuseoSans-100.eot");
+  src: local("☺"), url("fonts/MuseoSans-100.woff") format("woff"), url("fonts/MuseoSans-100.ttf") format("truetype"), url("fonts/MuseoSans-100.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-100Italic';
+  src: url("../../fonts/MuseoSans-100Italic.eot");
+  src: local("☺"), url("fonts/MuseoSans-100Italic.woff") format("woff"), url("fonts/MuseoSans-100Italic.ttf") format("truetype"), url("fonts/MuseoSans-100Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-300';
+  src: url("../../fonts/MuseoSans-300.eot");
+  src: local("☺"), url("fonts/MuseoSans-300.woff") format("woff"), url("fonts/MuseoSans-300.ttf") format("truetype"), url("fonts/MuseoSans-300.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-300Italic';
+  src: url("../../fonts/MuseoSans-300Italic.eot");
+  src: local("☺"), url("fonts/MuseoSans-300Italic.woff") format("woff"), url("fonts/MuseoSans-300Italic.ttf") format("truetype"), url("fonts/MuseoSans-300Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans_500';
+  src: url("../../fonts/MuseoSans_500.eot");
+  src: local("☺"), url("fonts/MuseoSans_500.woff") format("woff"), url("fonts/MuseoSans_500.ttf") format("truetype"), url("fonts/MuseoSans_500.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans_500_Italic';
+  src: url("../../fonts/MuseoSans_500_Italic.eot");
+  src: local("☺"), url("fonts/MuseoSans_500_Italic.woff") format("woff"), url("fonts/MuseoSans_500_Italic.ttf") format("truetype"), url("fonts/MuseoSans_500_Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans_700';
+  src: url("../../fonts/MuseoSans_700.eot");
+  src: local("☺"), url("fonts/MuseoSans_700.woff") format("woff"), url("fonts/MuseoSans_700.ttf") format("truetype"), url("fonts/MuseoSans_700.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-700Italic';
+  src: url("../../fonts/MuseoSans-700Italic.eot");
+  src: local("☺"), url("fonts/MuseoSans-700Italic.woff") format("woff"), url("fonts/MuseoSans-700Italic.ttf") format("truetype"), url("fonts/MuseoSans-700Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans_900';
+  src: url("../../fonts/MuseoSans_900.eot");
+  src: local("☺"), url("fonts/MuseoSans_900.woff") format("woff"), url("fonts/MuseoSans_900.ttf") format("truetype"), url("fonts/MuseoSans_900.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MuseoSans-900Italic';
+  src: url("../../fonts/MuseoSans-900Italic.eot");
+  src: local("☺"), url("fonts/MuseoSans-900Italic.woff") format("woff"), url("fonts/MuseoSans-900Italic.ttf") format("truetype"), url("fonts/MuseoSans-900Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0px;
+  background-image: url('../../images/bg_pat.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a,
+table,
+td,
+tr,
+form,
+label,
+button,
+input {
+  font-family: 'Museo300';
+}
+hr {
+  width: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.header {
+  width: 100%;
+  height: 200px;
+  border-top: solid 3px #f34220;
+  background-image: -moz-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
+}
+.header #main-logo {
+  width: 226px;
+  height: 67px;
+  background-image: url('../../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.footer {
+  width: 100%;
+  background-image: url('../../images/pat.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+}
+.footer #separator {
+  width: 100%;
+  height: 27px;
+  background-image: url('../../images/separator.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+  margin-top: -27px;
+  position: absolute;
+}
+.footer #slogan span {
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.footer #slogan #slogan-text {
+  width: 96%;
+  padding: 15px 2% 10px 2%;
+  font-size: 30px;
+  font-family: 'Pacifico';
+}
+.footer #slogan #slogan-desc {
+  display: none;
+}
+.footer #bottom-bar {
+  width: 100%;
+  height: 40px;
+}
+.footer #bottom-bar #copyright {
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0 10px 0;
+  color: #818181;
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+}
+.container .row div h2 {
+  margin: 0 auto;
+  font-family: 'Museo500';
+  text-transform: uppercase;
+  text-align: center;
+}
+.container .row div hr {
+  background: #424242;
+  height: 2px;
+}
+.container .back_block {
+  margin: 50px 0 0 0;
+  padding: 0 0 75px 0;
+}
+.container .back_block div a {
+  color: #424242;
+}
+.container .back_block div a .arrow_back {
+  width: 35px;
+  height: 21px;
+  display: inline-table;
+  background: url(../../images/icon_arrow_small.png) no-repeat center center;
+}
+.container .back_block div a .back_btn {
+  font-family: 'Museo500';
+  display: inline-block;
+  padding: 0 0 10px 0;
+}
+#index {
+  height: 385px;
+}
+#index div div {
+  text-align: center;
+}
+#index div div a {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  display: block;
+}
+#index div div a .big_btn {
+  margin: 0 auto;
+  border-radius: 45%;
+  width: inherit;
+  height: inherit;
+  background: url(../../images/orange_texture.jpg) no-repeat center center;
+  display: block;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(x1, y1, x2, y2);
+}
+#index div div a .big_btn .icon_big {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  padding-top: 240px;
+  background: #ccc;
+  display: block;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(x1, y1, x2, y2);
+}
+#index div div a .big_btn #isi_pulsa {
+  background: url(../../images/icon_big.png) no-repeat left center;
+}
+#index div div a .big_btn #cek_transaksi {
+  background: url(../../images/icon_big.png) no-repeat right center;
+}
+#index div div a:hover {
+  border: solid 1px #f34220;
+  border-radius: 45%;
+}
+#index div div a:hover .big_btn {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+#index div div a:hover .big_btn .icon_big {
+  padding-top: 203px;
+}
+@media screen and (max-width: 480px) {
+  #index div div a {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  #index div div a .big_btn .icon_big {
+    padding-top: 200px;
+  }
+  #index div div a:hover .big_btn {
+    width: 180px;
+    height: 180px;
+  }
+  #index div div a:hover .big_btn .icon_big {
+    padding-top: 165px;
+  }
+}
+@media screen and (max-width: 420px) {
+  #index div div a {
+    margin-left: -12px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #index div div a {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 405px) {
+  #index div div a {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+  }
+  #index div div a .big_btn .icon_big {
+    display: block;
+    padding-bottom: 45px;
+    zoom: 50%;
+    -webkit-zoom: 50%;
+    -moz-transform: scale(0.5);
+  }
+  #index div div a label {
+    font-size: 17px;
+  }
+  #index div div a:hover .big_btn {
+    width: 105px;
+    height: 105px;
+  }
+  #index div div a:hover .big_btn .icon_big {
+    padding-top: 0px;
+  }
+}
+#index div div label {
+  margin: 25px 0 0 0;
+  font-size: 24px;
+  font-family: 'Museo500';
+  color: #f34220;
+}
+@-moz-document url-prefix() {
+  @media screen and (max-width: 405px) {
+    #index div div a .big_btn .icon_big {
+      margin: -13px -13px;
+      padding-top: 0px;
+      position: absolute;
+    }
+    #index div div a:hover .big_btn .icon_big {
+      margin: -35px;
+    }
+  }
+}
+@media screen and (max-width: 405px) {
+  #index {
+    min-height: 1px;
+    height: 275px;
+  }
+}
+#operator div div ul {
+  padding: 0;
+}
+#operator div div ul .operator_item_wrapper .operator_item {
+  border-radius: 45%;
+  width: 165px;
+  height: 165px;
+  background: #f34220;
+  background-image: -moz-linear-gradient(134deg, #ffffff, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(44deg, 0 0, 0 100%, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(134deg, #ffffff, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(134deg, #ffffff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(134deg, #ffffff, rgba(255, 255, 255, 0));
+  margin: 0 auto;
+  margin-top: 10%;
+  display: block;
+  padding-top: 0.1px;
+}
+#operator div div ul .operator_item_wrapper .operator_item a .opr_img_wrapper,
+#operator div div ul .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper {
+  border-radius: 45%;
+  width: 159px;
+  height: 159px;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+#operator div div ul .operator_item_wrapper .operator_item a .opr_img_wrapper img,
+#operator div div ul .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper img {
+  display: block;
+  margin: 23px 15px 0 15px;
+  position: absolute;
+}
+@media screen and (max-width: 405px) {
+  #operator div div ul .operator_item_wrapper .operator_item {
+    width: 130px;
+    height: 130px;
+  }
+  #operator div div ul .operator_item_wrapper .operator_item a .opr_img_wrapper,
+  #operator div div ul .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper {
+    width: 124px;
+    height: 124px;
+  }
+  #operator div div ul .operator_item_wrapper .operator_item a .opr_img_wrapper img,
+  #operator div div ul .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper img {
+    padding: 9.5%;
+    position: absolute;
+    zoom: 80%;
+    -webkit-zoom: 80%;
+    -moz-transform: scale(0.8);
+    margin: 3px 0;
+  }
+}
+@-moz-document url-prefix() {
+  @media screen and (max-width: 405px) {
+    #operator {
+      margin-top: -20px;
+      min-height: 450px;
+    }
+    #operator div div ul .operator_item_wrapper .operator_item a .opr_img_wrapper img,
+    #operator div div ul .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper img {
+      padding: 0%;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .holder {
+    margin-left: -30px;
+  }
+}
+.ghost_area {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #666;
+  border: solid 1px #aaa;
+  font-size: 14px;
+  font-family: 'Museo300';
+  text-transform: none;
+  width: 100%;
+  min-height: 300px;
+}
+.grey_area {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #666;
+  border: solid 1px #aaa;
+  font-size: 14px;
+  font-family: 'Museo300';
+  text-transform: none;
+  height: 50px;
+  width: 104%;
+  margin: 0 0 10px -2%;
+  background: #f6f6f6;
+}
+.transp_area {
+  min-height: 50px;
+  width: 114%;
+  margin: 0 0 10px -7%;
+}
+@media screen and (max-width: 480px) {
+  .transp_area {
+    width: 114%;
+    margin: 0 0 10px -7%;
+  }
+}
+.btn-tbl {
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 2px 7px;
+}
+.btn-green {
+  background: green;
+}
+.btn-red {
+  background: red;
+}
+.btn-orange {
+  background: #f34220;
+}
+#denom {
+  margin-top: -20px;
+  min-height: 450px;
+}
+#denom div div .ghost_area .denom_item input {
+  display: none;
+}
+#denom div div .ghost_area .denom_item span {
+  margin: 0 0 0 10px;
+  font-size: 24px;
+  font-family: 'Museo500';
+  color: #f34220;
+}
+#denom div div .ghost_area .denom_item .text_say {
+  float: right;
+  font-size: 12px;
+  font-style: italic;
+  padding: 5px 0 0 0;
+  font-weight: normal;
+}
+#denom div div .ghost_area .denom_item .text_say::before {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  #denom div div .ghost_area .denom_item .text_say {
+    display: none;
+  }
+}
+#denom div div .ghost_area .hr_orange {
+  background: #f34220;
+}
+#denom div div .ghost_area p {
+  text-align: center;
+}
+#denom div div .ghost_area .btn_wrapper button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+  width: 104%;
+  margin: 10px 0 10px -2%;
+}
+#inputnumber {
+  margin-top: -20px;
+  min-height: 450px;
+}
+#inputnumber div div .ghost_area .big_input {
+  height: 75px;
+  color: #f34220;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+#inputnumber div div .ghost_area .transp_area {
+  min-height: 100px;
+  margin-top: 0px;
+}
+#inputnumber div div .ghost_area .transp_area .num_btn_wrap {
+  width: 33%;
+  height: 90px;
+  display: inline-block;
+  margin: 0 0 -15px 0;
+  float: left;
+}
+#inputnumber div div .ghost_area .transp_area .num_btn_wrap .num_btn {
+  border-radius: 45%;
+  margin: 0 auto;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: solid 1px #f34220;
+  background: none;
+  font-size: 30px;
+  color: #f34220;
+}
+#inputnumber div div .ghost_area .transp_area .num_btn_wrap .num_btn_blank {
+  border: solid 1px #ccc;
+}
+@media screen and (min-width: 330px) {
+  #inputnumber div div .ghost_area .transp_area {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+#inputnumber div div .ghost_area .btn_wrapper {
+  min-height: 100px;
+  margin-top: 0px;
+  min-height: 200px;
+  margin-top: 50px;
+}
+#inputnumber div div .ghost_area .btn_wrapper form {
+  width: 49%;
+  display: inline;
+}
+#inputnumber div div .ghost_area .btn_wrapper .num_btn_wrap {
+  width: 33%;
+  height: 90px;
+  display: inline-block;
+  margin: 0 0 -15px 0;
+  float: left;
+}
+#inputnumber div div .ghost_area .btn_wrapper .num_btn_wrap .num_btn {
+  border-radius: 45%;
+  margin: 0 auto;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: solid 1px #f34220;
+  background: none;
+  font-size: 30px;
+  color: #f34220;
+}
+#inputnumber div div .ghost_area .btn_wrapper .num_btn_wrap .num_btn_blank {
+  border: solid 1px #ccc;
+}
+#inputnumber div div .ghost_area .btn_wrapper button {
+  width: 49%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#inputnumber div div .ghost_area .btn_wrapper #btn_corr {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #aaa;
+  border: solid 1px #aaa;
+}
+#inputnumber div div .ghost_area .btn_wrapper #btn_next {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+}
+@media screen and (max-width: 320px) {
+  #inputnumber div div .ghost_area .btn_wrapper #btn_corr {
+    padding-left: 10px;
+  }
+  #inputnumber div div .ghost_area .btn_wrapper #btn_next {
+    padding-left: 14px;
+  }
+}
+#confirmation {
+  margin-top: -20px;
+  min-height: 450px;
+}
+#confirmation div div table {
+  margin: 10px 0 0 0;
+}
+#confirmation div div table tr {
+  height: 60px;
+}
+#confirmation div div table tr td .icon_tbl {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  background-image: url('../../images/icon_confirm.png');
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+#confirmation div div table tr .label_tbl {
+  font-family: 'Museo500';
+  color: #999;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 0 5px;
+}
+#confirmation div div table tr .result_number {
+  font-family: 'Museo700';
+  color: #f34220;
+  font-size: 24px;
+}
+#confirmation div div table tr .result_operator {
+  width: 125px;
+  height: inherit;
+  display: block;
+  background: url('../../images/operator-1.png') no-repeat center center;
+}
+#confirmation div div table tr .result_denom {
+  font-family: 'Museo700';
+  color: #424242;
+  font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  #confirmation div div table tr .result_number {
+    font-size: 18px;
+  }
+  #confirmation div div table tr .result_denom {
+    font-size: 18px;
+  }
+}
+#confirmation div div table tr:nth-child(odd) {
+  background: #f3f3f3;
+}
+#confirmation div div table tr:nth-child(1) td .icon_tbl {
+  background-position: top center;
+}
+#confirmation div div table tr:nth-child(2) td .icon_tbl {
+  background-position: center center;
+}
+#confirmation div div table tr:nth-child(3) td .icon_tbl {
+  background-position: bottom center;
+}
+#confirmation div div p,
+#confirmation div div h4 {
+  text-align: center;
+}
+#confirmation div div h4 {
+  margin: 25px 0 25px 0;
+  line-height: 24px;
+}
+#confirmation div div .ltgrey {
+  background: #ccc;
+  height: 1px;
+}
+#confirmation div div .icon_warning {
+  width: 50px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  background-image: url('../../images/icon_warning.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (min-width: 500px) {
+  #confirmation div div .icon_warning {
+    display: none;
+  }
+}
+#confirmation div div .btn_wrapper {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#confirmation div div .btn_wrapper button {
+  position: inline-block;
+  margin: 0 0 10px 10px;
+}
+#confirmation div div .btn_wrapper #btn_cancel {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #aaa;
+  border: solid 1px #aaa;
+}
+#confirmation div div .btn_wrapper #btn_ok {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+}
+@media screen and (min-width: 1190px) {
+  #confirmation div div .btn_wrapper {
+    width: 502px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1920px) {
+  #confirmation div div .btn_wrapper form {
+    min-width: 1px;
+    display: inline-block;
+    float: left;
+  }
+  #confirmation div div .btn_wrapper form button {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #confirmation div div .btn_wrapper form {
+    min-width: 100%;
+    margin: 0px auto;
+    display: block;
+  }
+  #confirmation div div .btn_wrapper form button {
+    margin: 0px auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+#success {
+  margin-top: -20px;
+  height: 570px;
+}
+#success div div .mascot {
+  margin: 0 auto;
+  width: 226px;
+  height: 303px;
+  background-image: url('../../images/mascot.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#success div div h1,
+#success div div h4 {
+  text-align: center;
+}
+#success div div h1 {
+  margin-top: 30px;
+  font-family: 'Museo700';
+  color: green;
+}
+#success div div h4 {
+  font-family: 'Museo300';
+}
+#success #main_btn {
+  margin: 30px 0 0 0;
+}
+#success #main_btn div a {
+  color: #f34220;
+  width: 160px;
+  height: 50px;
+  display: block;
+  font-family: 'Museo500';
+  margin: 0 auto;
+}
+#success #main_btn div a .icon_small {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  margin: 0 5px -13px 0;
+}
+#success #main_btn div a #isi_pulsa_small {
+  background: url(../../images/icon_small.png) no-repeat left center;
+}
+#success #main_btn div a #cek_transaksi_small {
+  background: url(../../images/icon_small.png) no-repeat right center;
+}
+#success #main_btn div a:hover {
+  text-decoration: none;
+}
+#login {
+  margin-top: -20px;
+  margin-bottom: 75px;
+  min-height: 345px;
+}
+#login div div .ghost_area {
+  min-height: 250px;
+}
+#login div div .ghost_area input {
+  font-size: 18px;
+  color: black;
+}
+#login div div .ghost_area input::-webkit-input-placeholder {
+  font-style: italic;
+  color: #999;
+}
+#login div div .ghost_area input:-moz-placeholder {
+  font-style: italic;
+  color: #999;
+}
+#login div div .ghost_area input::-moz-placeholder {
+  font-style: italic;
+  color: #999;
+}
+#login div div .ghost_area input:-ms-input-placeholder {
+  font-style: italic;
+  color: #999;
+}
+#login div div .ghost_area .hr_orange {
+  background: #f34220;
+}
+#login div div .ghost_area .btn_wrapper button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+  width: 104%;
+  margin: 10px 0 10px -2%;
+}
+#dashboard,
+#manualinput {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  min-height: 0px;
+}
+#dashboard div div a,
+#manualinput div div a {
+  width: 50%;
+  display: inline;
+}
+#dashboard div div a span,
+#manualinput div div a span {
+  color: #424242;
+  font-family: 'Museo500';
+  font-size: 16px;
+}
+#dashboard div div a #manual_input_link,
+#manualinput div div a #manual_input_link {
+  color: #f34220;
+  margin-left: 15px;
+}
+#dashboard div div a #to_home,
+#manualinput div div a #to_home,
+#dashboard div div a #log_out,
+#manualinput div div a #log_out {
+  float: right;
+}
+#dashboard div div a #to_home,
+#manualinput div div a #to_home {
+  padding: 0 15px 0 0;
+  border-right: solid 1px #ccc;
+}
+#dashboard div div a #log_out,
+#manualinput div div a #log_out {
+  margin: 0 0 0 15px;
+}
+#dashboard div div a .icon_dahboard,
+#manualinput div div a .icon_dahboard {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  background: #ccc;
+}
+#dashboard div div a #home_icon,
+#manualinput div div a #home_icon {
+  float: right;
+  background: url(../../images/icon_home.png) no-repeat center center;
+}
+@media screen and (max-width: 1035px) {
+  #dashboard div div a #to_home,
+  #manualinput div div a #to_home {
+    display: none;
+  }
+}
+#dashboard div div a #to_dashboard,
+#manualinput div div a #to_dashboard {
+  color: #424242;
+}
+#dashboard div div a #to_dashboard_icon,
+#manualinput div div a #to_dashboard_icon {
+  margin-left: 3px;
+  background: url(../../images/icon_arrow_small.png) no-repeat center center;
+}
+#dashboard div div a #to_dashboard,
+#manualinput div div a #to_dashboard {
+  margin-left: 3px;
+  position: absolute;
+}
+@media only screen and (max-width: 767px) {
+  #dashboard div div a #to_dashboard,
+  #manualinput div div a #to_dashboard,
+  #dashboard div div a #to_dashboard_icon,
+  #manualinput div div a #to_dashboard_icon,
+  #dashboard div div a #manual_input_link,
+  #manualinput div div a #manual_input_link {
+    position: absolute;
+    margin-top: 75px;
+    z-index: 98;
+  }
+  #dashboard div div a #to_dashboard_icon,
+  #manualinput div div a #to_dashboard_icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #dashboard div:nth-child(2),
+  #manualinput div:nth-child(2) {
+    margin: 50px 0 0 0;
+  }
+}
+.dashboard-btn-wrapper {
+  display: block;
+}
+.dashboard-btn-wrapper .dashboard-btn-part {
+  display: inline-block;
+  width: 32%;
+}
+.dashboard-btn-wrapper .dashboard-btn-part .triangle {
+  width: 30%;
+  height: 18px;
+  background: url(../../images/triangle.png) no-repeat center bottom;
+  position: absolute;
+  margin: 49px 0 0 0;
+  z-index: 9;
+}
+@-moz-document url-prefix() {
+  .triangle {
+    margin: 48px 0 0 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .dashboard-btn-wrapper .dashboard-btn-part .triangle {
+    margin: 49px 0 0 0;
+  }
+}
+.dashboard-btn-wrapper .dashboard-btn-part a {
+  width: 40%;
+  height: inherit;
+  padding: 0 30%;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a .icon-dashboard-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url(../../images/icon_dashboard.png) no-repeat;
+  border-radius: 45%;
+  background-color: #bbb;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a #icon-dashboard-btn-1 {
+  background-position: left center;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a #icon-dashboard-btn-2 {
+  background-position: center center;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a #icon-dashboard-btn-3 {
+  background-position: right center;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a .text-dashboard-btn {
+  font-weight: bold;
+  position: absolute;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 6px 0 0 10px;
+  color: #bbb;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a .icon-dashboard-btn-active {
+  background-color: #f34220;
+}
+.dashboard-btn-wrapper .dashboard-btn-part a .text-dashboard-btn-active {
+  color: #f34220;
+}
+@media only screen and (max-width: 600px) {
+  .dashboard-btn-wrapper .dashboard-btn-part {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+  }
+  .dashboard-btn-wrapper .dashboard-btn-part a {
+    padding: 0 10%;
+  }
+  .dashboard-btn-wrapper .dashboard-btn-part .triangle {
+    display: none;
+  }
+}
+.ng-search {
+  margin: 0 0 0 10px;
+  width: 34%;
+}
+#queue {
+  margin-top: -20px;
+  margin-bottom: 125px;
+  min-height: 350px;
+}
+#queue div div div {
+  /**/
+}
+#queue div div div table thead tr th {
+  text-align: center;
+}
+#queue div div div table thead tr th span {
+  text-transform: capitalize;
+  color: white;
+  width: 95%;
+  height: inherit;
+  display: block;
+  margin: 0 auto;
+  background: #f34220;
+  padding: 10px 0;
+  border-radius: 8px;
+  border-bottom: solid 2px #ccc;
+  background: url(../../images/orange_texture_small.jpg) no-repeat center center;
+}
+@media only screen and (min-width: 768px) {
+  #queue div div div table tbody tr {
+    height: 50px;
+  }
+  #queue div div div table tbody tr td,
+  #queue div div div table tbody tr .td-queue {
+    width: 17.5%;
+  }
+  #queue div div div table tbody tr .td-seven {
+    width: 15.5%;
+  }
+  #queue div div div table tbody tr .tbl-action-2 {
+    display: inline;
+  }
+  #queue div div div table tbody tr .tbl-action-2 form {
+    margin: 12px 0 0 0;
+    padding: 0 4px;
+  }
+}
+#queue div div div table tbody tr td {
+  text-align: center;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 767px) {
+  #queue div div div table tbody tr td {
+    text-align: left;
+  }
+  #queue div div div table tbody tr .tbl-action-2 form {
+    margin: 10px 0 0 0;
+  }
+}
+#queue div div div table tbody tr .tbl-action-2 form button {
+  display: inline;
+}
+#queue div div div table tbody tr td:nth-child(even) {
+  background: rgba(255, 255, 255, 0.35);
+}
+#queue div div div table tbody tr td:nth-child(2) {
+  font-weight: bold;
+  color: #f34220;
+}
+#queue div div div table tbody tr td:nth-child(4) {
+  font-weight: bold;
+}
+#queue div div div table tbody tr:nth-child(even) {
+  background: #efefef;
+}
+#queue div div div div .pagination {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+#queue div div div div .pagination li a {
+  color: black;
+}
+#queue div div div div .pagination li a:hover {
+  background: #f34220;
+  color: white;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  #queue div div div div .pagination {
+    width: 103%;
+  }
+}
+@media only screen and (max-width: 768px), (min-device-width: 200px) and (max-device-width: 768px) {
+  #queue div div div div .pagination {
+    width: 105%;
+  }
+}
+.modal-content .modal-header hr {
+  display: none;
+}
+.modal-content #success {
+  margin: 0 0 30px 0;
+}
+.modal-content #confirmation {
+  margin: 0 0 30px 0;
+}
+.modal-content #confirmation div div table tr td {
+  text-align: left;
+}
+.modal-content #inputnumber {
+  margin-top: 0;
+}
+.modal-content #inputnumber div div .ghost_area {
+  width: 106%;
+  margin-left: -3%;
+}
+.modal-content #inputnumber div div form {
+  margin-bottom: 10px;
+}
+.modal-content #inputnumber div div form .grey_area {
+  width: 100%;
+  margin-left: 0;
+}
+.modal-content .statusinmodal div div table tr td {
+  text-align: left;
+}
+.modal-content .statusinmodal div div .status-part .status-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url(../../images/icon_dashboard.png) no-repeat center center;
+  border-radius: 45%;
+  background-color: green;
+  margin: 0 0 0 -150px;
+  padding: 21px;
+}
+.modal-content .statusinmodal div div .status-part .status-text {
+  font-weight: bold;
+  position: absolute;
+  font-size: 30px;
+  text-transform: capitalize;
+  padding: 0px 0px 0px 15px;
+  color: green;
+}
+.modal-title,
+.modal-body {
+  text-align: center;
+}
+.modal-title #confirmation,
+.modal-body #confirmation {
+  min-height: 1px;
+}
+.modal-footer .btn-primary {
+  width: 100%;
+  background: #f34220;
+}
+#manualinput-container > div:nth-child(1) {
+  margin: 0 0 50px 0;
+}
+#manualinput-container > div:nth-child(2),
+#manualinput-container > div:nth-child(3),
+#manualinput-container > div:nth-child(4) {
+  margin: 0 0 100px 0;
+}
+#manualinput-container > div:nth-child(2) div div h2,
+#manualinput-container > div:nth-child(3) div div h2,
+#manualinput-container > div:nth-child(4) div div h2 {
+  text-transform: capitalize;
+  color: #f34220;
+}
+#manualinput-container > div:nth-child(2) div div hr,
+#manualinput-container > div:nth-child(3) div div hr,
+#manualinput-container > div:nth-child(4) div div hr {
+  background: #f34220;
+}
+#manualinput-container #operator div div .newsletter .options .operator_item_wrapper .operator_item .opr-wrapper input {
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width: 405px) {
+  #manualinput-container #operator div div .newsletter .options .operator_item {
+    width: 130px;
+    height: 130px;
+  }
+  #manualinput-container #operator div div .newsletter .options .operator_item a .opr_img_wrapper,
+  #manualinput-container #operator div div .newsletter .options .operator_item .opr-wrapper .opr_img_wrapper {
+    width: 124px;
+    height: 124px;
+  }
+  #manualinput-container #operator div div .newsletter .options .operator_item a .opr_img_wrapper img,
+  #manualinput-container #operator div div .newsletter .options .operator_item .opr-wrapper .opr_img_wrapper img {
+    position: absolute;
+    zoom: 80%;
+    -webkit-zoom: 80%;
+    -moz-transform: scale(0.8);
+    margin: -8px -14px 0;
+  }
+}
+#manualinput-container #inputnumber div div .ghost_area {
+  padding: 10px 20px 20px;
+}
+#manualinput-container #inputnumber div div .ghost_area .btn_wrapper .button-full {
+  width: 104%;
+  margin: 10px 0 -10px -2%;
+}
+#manualinput-container #inputnumber div div .ghost_area-blank {
+  border: none;
+  min-height: 100px;
+  height: 100px;
+  margin: 0 0 50px 0;
+}
+#manualinput-container #inputnumber div div .ghost_area-blank .btn_wrapper {
+  min-height: 100px;
+  height: 100px;
+}
+#manualinput-container #inputnumber div div .ghost_area-blank .btn_wrapper .button-full {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+  width: 114%;
+  margin: 10px 0 10px -7%;
+}
+#manualinput-container #inputnumber div div .ghost_area-blank .btn_wrapper #btn_corr {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: white;
+  color: #aaa;
+  border: solid 1px #aaa;
+}
+#manualinput-container #inputnumber div div .ghost_area-blank .btn_wrapper #btn_next {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 24px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+  background: #f34220;
+  color: white;
+}
+@-moz-document url-prefix() {
+  @media screen and (max-width: 405px) {
+    #manualinput-container #operator div div .newsletter .options .operator_item_wrapper .operator_item a .opr_img_wrapper img,
+    #manualinput-container #operator div div .newsletter .options .operator_item_wrapper .operator_item .opr-wrapper .opr_img_wrapper img {
+      margin: 2px -3px;
+    }
+  }
+}
+/* line 164, src/system.scss */
+.newsletter {
+  padding: 10px 20px 0;
+}
+/* line 168, src/system.scss */
+.newsletter h3 {
+  color: #9e1d21;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 175, src/system.scss */
+.newsletter input[type=email] {
+  border: 1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 55px 5px 10px;
+  width: 100%;
+}
+/* line 182, src/system.scss */
+/* line 184, src/system.scss */
+.newsletter .input {
+  margin: 1em 0 1em;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+/* line 189, src/system.scss */
+.newsletter input[type=submit] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #232323;
+  color: #fff;
+  border: none 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  position: absolute;
+}
+/* line 201, src/system.scss */
+.newsletter label {
+  margin: 1px 0 0 0;
+}
+/* line 203, src/system.scss */
+.newsletter label:last-child {
+  margin-right: 0;
+}
+/* line 206, src/system.scss */
+.newsletter label.checked span:before {
+  background: url(../../images/icon_check_small.png) #ffffff no-repeat center center;
+}
+/* line 210, src/system.scss */
+.newsletter label span {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25em;
+  padding-left: 1.3em;
+  position: relative;
+}
+.newsletter label .opr_img_wrapper {
+  padding-left: 3px;
+}
+/* line 217, src/system.scss */
+.newsletter label span:before {
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: white 0 0 0 1px, #cccccc 0 0 0 2.5px;
+  -moz-box-shadow: white 0 0 0 1px, #cccccc 0 0 0 2.5px;
+  box-shadow: white 0 0 0 1px, #cccccc 0 0 0 2.5px;
+  content: "";
+  left: -8px;
+  top: 12%;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  margin-top: -6px;
+  position: absolute;
+}

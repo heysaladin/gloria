@@ -1,0 +1,180 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        &times;
+    </button>
+    <h2 class="modal-title" id="myModalLabel">
+        Masukkan Nomor Anda
+    </h2>
+    <hr/>
+</div>
+<div class="modal-body">
+    <p>
+        Masukkan nomor Anda untuk mengetahui status transaksi Anda
+    </p>
+    <!-- begin-of-input -->
+    <div class="container" id="inputnumber">
+        <div class="row">
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="ghost_area">
+                    <input type="text" name="input_number" id="input_num" class="big_input grey_area" />
+                    <div class="transp_area">
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-1">1</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-2">2</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-3">3</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-4">4</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-5">5</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-6">6</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-7">7</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-8">8</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-9">9</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn num_btn_blank" id=""></button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn" id="btn-0">0</button>
+                        </span>
+                        <span class="num_btn_wrap">
+                            <button class="num_btn num_btn_blank" id=""></button>
+                        </span>
+                    </div>
+                    <div class="btn_wrapper">
+                        <button id="btn_corr">
+                            koreksi
+                        </button>
+                        <form id="status_ajax" action="status.html">
+                            <button id="btn_next">
+                                lanjut
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+    </div>
+</div>
+<script>
+//ajax 2
+$(document).ready(function() {
+
+
+    //------------------------
+    var textField = $('#input_num');
+    $('body').on('click', '#btn-1', function() {
+        textField.val(textField.val() + ' 1');
+    });
+    $('body').on('click', '#btn-2', function() {
+        textField.val(textField.val() + ' 2');
+    });
+    $('body').on('click', '#btn-3', function() {
+        textField.val(textField.val() + ' 3');
+    });
+    $('body').on('click', '#btn-4', function() {
+        textField.val(textField.val() + ' 4');
+    });
+    $('body').on('click', '#btn-5', function() {
+        textField.val(textField.val() + ' 5');
+    });
+    $('body').on('click', '#btn-6', function() {
+        textField.val(textField.val() + ' 6');
+    });
+    $('body').on('click', '#btn-7', function() {
+        textField.val(textField.val() + ' 7');
+    });
+    $('body').on('click', '#btn-8', function() {
+        textField.val(textField.val() + ' 8');
+    });
+    $('body').on('click', '#btn-9', function() {
+        textField.val(textField.val() + ' 9');
+    });
+    $('body').on('click', '#btn-0', function() {
+        textField.val(textField.val() + ' 0');
+    });
+    //---------------------
+    $('body').on('click', '#btn_corr', function() {
+        textField.val('');
+    });
+    //------------------------
+
+    var originalState = $('.modal-content').clone();
+    $('#status_ajax').on('click', function(event) {
+        console.log('klik');
+        //-----------------------------------------
+        setTimeout(function() {
+            $('#myModal').modal('hide');
+            // $('.modal-content').empty();
+            // $('.modal-content').ajaxComplete();
+            // $('.modal-content').load('.modal-content');
+            // $('.modal-content').end();
+            // $('.modal-content').replaceWith(originalState);
+            // $('.modal-content').replaceWith('check.html');
+            // $('.modal-content').load($(this).attr('check.html'));
+            $('.modal-content').load('check.html');
+        }, 4000);
+        //-----------------------------------------
+        event.preventDefault();
+        if ($(this).attr('action') != '#') {
+            $("html, body").animate({
+                scrollTop: 200
+            }, "fast");
+            $('.modal-content').load($(this).attr('action'));
+        }
+    });
+});
+</script>
+<script>
+// var textField = $('#input_num');
+// $('body').on('click', '#btn-1', function() {
+//     textField.val(textField.val() + ' 1');
+// });
+// $('body').on('click', '#btn-2', function() {
+//     textField.val(textField.val() + ' 2');
+// });
+// $('body').on('click', '#btn-3', function() {
+//     textField.val(textField.val() + ' 3');
+// });
+// $('body').on('click', '#btn-4', function() {
+//     textField.val(textField.val() + ' 4');
+// });
+// $('body').on('click', '#btn-5', function() {
+//     textField.val(textField.val() + ' 5');
+// });
+// $('body').on('click', '#btn-6', function() {
+//     textField.val(textField.val() + ' 6');
+// });
+// $('body').on('click', '#btn-7', function() {
+//     textField.val(textField.val() + ' 7');
+// });
+// $('body').on('click', '#btn-8', function() {
+//     textField.val(textField.val() + ' 8');
+// });
+// $('body').on('click', '#btn-9', function() {
+//     textField.val(textField.val() + ' 9');
+// });
+// $('body').on('click', '#btn-0', function() {
+//     textField.val(textField.val() + ' 0');
+// });
+// //---------------------
+// $('body').on('click', '#btn_corr', function() {
+//     textField.val('');
+// });
+</script>

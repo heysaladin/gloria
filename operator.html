@@ -1,0 +1,404 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gloriacell">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloria Cell | Operator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/glorcss/style.css" />
+    <script src="js/glorjsmin/jquery-1.9.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery/jquery-1.8.2.min.js"></script>-->
+    <script type="text/javascript" src="js/glorjs/jPages.js"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28718218-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <script>
+    /* when document is ready */
+    $(function() {
+
+        /* initiate the plugin */
+        $("div.holder").jPages({
+            containerID: "itemContainer",
+            perPage: 8,
+            startPage: 1,
+            startRange: 1,
+            midRange: 5,
+            endRange: 1
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <style>
+    .header {
+        height: 30px;
+    }
+    
+    @-moz-document url-prefix() {
+        .header {
+            height: 40px;
+        }
+    }
+    
+    #main-logo {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .footer hr,
+    .footer #slogan #slogan-text {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .container .back_block {
+        margin: 0px 0 0 -20px;
+        padding: 0 0 46px 0;
+    }
+    
+    @media screen and (min-width: 500px) {
+        .back_block div a {
+            margin: -65px 0 0 0;
+            position: absolute;
+        }
+    }
+    </style>
+    </style>
+    <style type="text/css">
+    .holder {
+        /*margin: 15px 0;*/
+    }
+    
+    .holder a {
+        font-size: 20px;
+        /*padding: 0 3px;*/
+        cursor: pointer;
+        margin: 0 5px;
+        /*color: #333;*/
+    }
+    
+    .holder a:hover {
+        background-color: #222;
+        color: #fff;
+    }
+    
+    .holder a.jp-previous {
+        /*margin-right: 15px;*/
+    }
+    
+    .holder a.jp-next {
+        margin-left: 15px;
+    }
+    
+    .holder a.jp-current,
+    a.jp-current:hover {
+        color: #FF4242;
+        font-weight: bold;
+    }
+    
+    .holder a.jp-disabled,
+    a.jp-disabled:hover {
+        color: #bbb;
+    }
+    
+    .holder a.jp-current,
+    a.jp-current:hover,
+    .holder a.jp-disabled,
+    a.jp-disabled:hover {
+        cursor: default;
+        background: none;
+    }
+    
+    .holder span {
+        margin: 0 5px;
+    }
+    </style>
+    <style>
+    .pagination {
+        float: right;
+        margin-right: 3%;
+        margin-top: 7%;
+    }
+    
+    @media screen and (max-width: 405px) {
+        .pagination {
+            float: left;
+            margin-left: 3%;
+            margin-top: 7%;
+        }
+    }
+    /*.jp-current, .jp-hidden,
+    .holder a:nth-child(3){
+        display: none;
+    }*/
+    /*.holder a{
+        display: none;
+    }
+    .holder a:nth-child(1),
+    .holder a:nth-child(4),{
+        display: inline-block !important;
+    }*/
+    /*.holder a:nth-child(2),
+    .holder a:nth-child(3),{
+        display: none;
+    }*/
+    
+    .jp-previous,
+    .jp-next {
+        background: #f34220;
+        padding: 6px 20px;
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .holder a.jp-previous {
+        margin-right: -25px;
+    }
+    </style>
+    <div header-part></div>
+    <div class="container" id="operator">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>pilih operator</h2>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12">
+                <!-- item container -->
+                <ul id="itemContainer" class="small_pg">
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-1">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-1.png" alt="simpati"/>
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-2">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-2.png" alt="simpati"/>
+                    </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-3">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-3.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-4">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-4.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-5">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-5.png" alt="simpati"/>
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-6">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-6.png" alt="simpati"/>
+                    </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-7">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-7.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-8">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-8.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-9">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-9.png" alt="simpati"/>
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-10">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-10.png" alt="simpati"/>
+                    </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-11">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-11.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-12">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-12.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-13">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-13.png" alt="simpati"/>
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-14">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-14.png" alt="simpati"/>
+                    </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-15">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-15.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="operator_item_wrapper col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="operator_item" id="opr-16">
+                            <a href="denom.html">
+                                <span class="opr_img_wrapper">
+                            <img src="images/operator-16.png" alt="simpati" />
+                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+                <!-- navigation holder -->
+                <div class="pagination">
+                    <div class="holder"></div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-0"></div>
+        </div>
+        <div class="row back_block">
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12">
+                <a href="index.html">
+                    <span class="arrow_back"></span>
+                    <h3 class="back_btn">Kembali</h3>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-0"></div>
+        </div>
+    </div>
+    <div footer-part></div>
+    <!--  jQuery 1.7+  
+    <script src="js/glorjsmin/jquery-1.9.1.min.js"></script>-->
+    <script src="js/glorjsmin/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script type="text/javascript" src="js/glorjs/script.js"></script>
+    <script>
+    var winW = 630,
+        winH = 460;
+    if (document.body && document.body.offsetWidth) {
+        winW = document.body.offsetWidth;
+        winH = document.body.offsetHeight;
+    }
+    if (document.compatMode == 'CSS1Compat' &&
+        document.documentElement &&
+        document.documentElement.offsetWidth) {
+        winW = document.documentElement.offsetWidth;
+        winH = document.documentElement.offsetHeight;
+    }
+    if (window.innerWidth && window.innerHeight) {
+        winW = window.innerWidth;
+        winH = window.innerHeight;
+    }
+    $(document).ready(function() {
+        if (screen.width <= 770) {
+            autoScrolling: false;
+            fitToSection: false;
+            console.log("ok");
+        }
+        $('.section').height(winH);
+    });
+    console.log("lebar " + winW);
+    console.log("tinggi " + winH);
+    console.log("tinggi container " + $('.container').height());
+    if ((winW == 960) && (winH == 600)) {
+        console.log($('.container').width()+ " X " + $('.container').height()+ ", special size");
+    } else if (winW < 768) {
+        console.log($('.container').width() + ", small width");
+    } else if (winH < 400) {
+        console.log($('.container').height() + ", narrow");
+    } else if (($('.container').height() + 50) > winH) {
+        console.log($('.container').height() + ", long");
+        var gap = 924 - winH;
+        console.log("gap " + gap);
+        $('.container').height(winH - 70);
+    } else {
+        console.log($('.container').height() + ", save");
+        var gap = winH - ($('.container').height() + 50);
+        console.log("gap " + gap);
+        $('.container').height(($('.container').height() + gap) - 50);
+    }
+    </script>
+</body>
+
+</html>

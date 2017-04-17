@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gloriacell">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloria Cell | Konfirmasi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/glorcss/style.css" />
+</head>
+
+<body>
+    <style>
+    .header {
+        height: 50px;
+    }
+    
+    #main-logo {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .footer hr,
+    .footer #slogan #slogan-text {
+        display: none;
+    }
+    /*----------------------*/
+    
+    .container .back_block {
+        margin: 0px 0 0 -20px;
+        padding: 0 0 31px 0;
+    }
+    </style>
+    <div header-part></div>
+    <div class="container" id="confirmation">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>konfirmasi</h2>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-3 col-sm-2 col-xs-0"></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <p>Untuk transaksi dengan rincian sebagai berikut:</p>
+                <table border="0" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">nomor</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_number">+62 85 648 984 911</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">operator</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_operator"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="icon_tbl"></span>
+                        </td>
+                        <td class="label_tbl">denom</td>
+                        <td class="label_tbl">:</td>
+                        <td class="result_denom">50000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-2 col-xs-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <hr class="ltgrey" />
+                <span class="icon_warning"></span>
+                <h4>Apakah Anda <strong>yakin</strong> data yang Anda masukkan <br/>sudah <strong>benar</strong>?</h4>
+                <div class="btn_wrapper">
+                    <form action="operator.html">
+                        <button id="btn_cancel">batalkan</button>
+                    </form>
+                    <form action="success.html">
+                        <button id="btn_ok">iya, proses sekarang</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+        </div>
+        <div class="row back_block">
+            <div class="col-lg-3 col-md-2 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                <a href="inputnumber.html">
+                    <span class="arrow_back"></span>
+                    <h3 class="back_btn">Kembali</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-0 col-xs-0"></div>
+        </div>
+    </div>
+    <div footer-part></div>
+    <!--  jQuery 1.7+  -->
+    <script src="js/glorjsmin/jquery-1.9.1.min.js"></script>
+    <script src="js/glorjsmin/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script type="text/javascript" src="js/glorjs/script.js"></script>
+    <script>
+    var winW = 630,
+        winH = 460;
+    if (document.body && document.body.offsetWidth) {
+        winW = document.body.offsetWidth;
+        winH = document.body.offsetHeight;
+    }
+    if (document.compatMode == 'CSS1Compat' &&
+        document.documentElement &&
+        document.documentElement.offsetWidth) {
+        winW = document.documentElement.offsetWidth;
+        winH = document.documentElement.offsetHeight;
+    }
+    if (window.innerWidth && window.innerHeight) {
+        winW = window.innerWidth;
+        winH = window.innerHeight;
+    }
+    $(document).ready(function() {
+        if (screen.width <= 770) {
+            autoScrolling: false;
+            fitToSection: false;
+            console.log("ok");
+        }
+        $('.section').height(winH);
+    });
+    console.log("lebar " + winW);
+    console.log("tinggi " + winH);
+    if (winW < 768) {
+        console.log($('.container').width() + ", small width");
+    } else if (winH < 400) {
+        console.log($('.container').height() + ", narrow");
+    } else if (($('.container').height() + 50) > winH) {
+        console.log($('.container').height() + ", long");
+    } else {
+        console.log($('.container').height() + ", save");
+        var gap = winH - ($('.container').height() + 50);
+        console.log("gap " + gap);
+        $('.container').height(($('.container').height() + gap) - 40 + 20);
+    }
+    </script>
+</body>
+
+</html>
